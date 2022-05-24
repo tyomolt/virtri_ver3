@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="../css/tomoru.css">
+</head>
+<body>
+  
+  <header>
+    <div class="container1">
+      <div class="header-left">
+        <img class="logo" src="../images/virtri_icon2.PNG">
+      </div>
+
+      <div class="header-right">
+        <a href="#">カテゴリ</a>
+        <a href="#">MyPage</a>
+        <a href="#">ログイン</a>
+        
+      </div>
+    </div>
+  </header>
+
+  
+  <div>
+    <h1>
+      <br>
+      <br>検索一覧</h1>
+    <fieldset>
+      <legend>国籍</legend>
+      <label><input type="checkbox">japan</label>
+      <label><input type="checkbox">america</label>
+      <label><input type="checkbox">chinese</label>
+      <input type="range" name="evaluation">
+      <!-- <label for="evaluation">評価</label> -->
+      <div class="btn" id="btn">絞り込み</div>
+    </fieldset>
+  </div>
+  <section class="person">
+    <div class="hito1">
+      <ul>
+        <img src="../images/person1.png" width="50" height="70">
+        <h2>CTC 太郎</h2>
+        <li>22歳</li>
+        <li>日本</li>
+        <li>評価　3.6</li>
+      </ul>
+      <div id="open">詳細を見る</div>
+    </div>
+    <div class="hito2">
+      <ul>
+        <img src="../images/person2.png" width="50" height="70">
+        <h2>CTC 次郎</h2>
+        <li>32歳</li>
+        <li>アメリカ</li>
+        <li>評価　2.6</li>
+      </ul>
+      <div id="open">詳細を見る</div>
+    </div>
+    <div class="hito3">
+      <ul>
+        <img src="../images/person3.png" width="50" height="70">
+        <h2>CTC 三郎</h2>
+        <li>45歳</li>
+        <li>イギリス</li>
+        <li>評価　4.2</li>
+      </ul>
+      <div id="open">詳細を見る</div>
+    </div>
+  </section>
+
+  <div id="mask" class="hidden"></div>
+  <div id="modal" class="hidden">
+    <div class="hito1">
+      <ul>
+        <img src="../images/person1.png" width="50" height="70">
+        <h2>CTC 太郎</h2>
+        <li>22歳</li>
+        <li>日本</li>
+        <li>評価　3.6</li>
+      </ul>
+      <div class="btn">
+        <a href="ikumi.html">承認</a>
+      </div>
+      <div id="close">閉じる</div>
+    </div>
+  </div>
+  <div id="modal" class="hidden">
+    <div class="hito2">
+      <ul>
+        <img src="../images/person2.png" width="50" height="70">
+        <h2>CTC 次郎</h2>
+        <li>32歳</li>
+        <li>アメリカ</li>
+        <li>評価　2.6</li>
+      </ul>
+      <div class="close">詳細を見る</div>
+    </div>
+  </div>
+  <div id="modal" class="hidden">
+    <div class="hito3">
+      <ul>
+        <img src="../images/person3.png" width="50" height="70">
+        <h2>CTC 三郎</h2>
+        <li>45歳</li>
+        <li>中国</li>
+        <li>評価　4.2</li>
+      </ul>
+      <div class="close">詳細を見る</div>
+    </div>
+  </div>
+
+  <footer>(c) jyunki.com</footer>
+  
+  </script><script src="../java/tomoru.js"></script>
+  <h1></h1>
+  <button onclick="sendDataToFirebase()">Firebase にデータ送信</button>
+  <div id="contents"></div>
+  
+      <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"> </script>
+      <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+      <script src="../js/tomoru.js"></script>
+</body>
+</html>

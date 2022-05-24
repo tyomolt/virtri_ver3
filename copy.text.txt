@@ -1,0 +1,88 @@
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyCODhqIeRH3qj3J4uyNpPM8hf1tU_oMEDs",
+    authDomain: "virtri-c2858.firebaseapp.com",
+    databaseURL: "https://virtri-c2858-default-rtdb.firebaseio.com",
+    projectId: "virtri-c2858",
+    storageBucket: "virtri-c2858.appspot.com",
+    messagingSenderId: "228115726668",
+    appId: "1:228115726668:web:cd07ed7bc9e887dcfb4fe9"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
+
+<!--P13 コードコピー　-->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"> </script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+<script>
+</script>
+
+<!--P15 コードコピー（１）　-->
+<button onclick="sendDataToFirebase()">Firebase にデータ送信</button>
+
+
+<!--P15 コードコピー（２）　-->
+// Firebaseにデータを送信するための関数。
+function sendDataToFirebase(){
+    var db = firebase.database();
+    db.ref("KeyA").set("あああ")
+    db.ref("KeyB").set("いいい")
+    db.ref("KeyC").set({value1:"ううう1", value2:"ううう2", value3:"ううう3"})
+}
+
+<!--P20 コードコピー　-->
+// Firebaseからデータを受信するための「リスナー」を設置。
+var reference_a = firebase.database().ref("KeyA");
+var reference_b = firebase.database().ref("KeyB");
+var reference_c = firebase.database().ref("KeyC");
+
+reference_a.on('value', (snapshot) => {
+console.log("KeyAに紐づけられた値：" + snapshot.val())
+    });
+
+reference_b.on('value', (snapshot) => {
+    console.log("KeyBに紐づけられた値：" + snapshot.val())
+    });
+
+reference_c.on('value', (snapshot) => {
+    console.log("KeyCに紐づけられた値：" + snapshot.val())
+    });
+    
+<!--P23 コードコピー（１）　-->
+    <div id="contents"></div>
+
+<!--P23 コードコピー（２）　-->
+function addText(data){
+    const p = document.createElement("p");
+    p.innerHTML = data
+    const div = document.getElementById("contents")
+    div.appendChild(p)
+}
+
+<!--P24 コードコピー　-->
+reference_a.on('value', (snapshot) => {
+    const data = snapshot.val();
+    addText(data)
+});
+
+reference_b.on('value', (snapshot) => {
+    const data = snapshot.val();
+    addText(data)
+});
+
+reference_c.on('value', (snapshot) => {
+    const data1 = snapshot.val().value1;
+    const data2 = snapshot.val().value2;
+    const data3 = snapshot.val().value3;
+    addText(data1)
+    addText(data2)
+    addText(data3)
+});
