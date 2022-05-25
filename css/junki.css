@@ -1,284 +1,299 @@
 body {
-    margin: 0;
-    font-family: "Hiragino Kaku Gothic ProN";
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  /*上の調整*/
-  .container1 {
-    max-width: 100%;
-    margin: auto;
-    padding-left: 2%;
-    padding-right: 2%;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  /*広告と黒ちょぼの距離*/
-  .container2 {
-    max-width: 80%;
-    height: 480px;
-    margin: auto;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  /*ボタンとロゴの距離*/
-  .container3 {
-    max-width: 100%;
-    height: 120px;
-    margin: auto;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  /*下の調整*/
-  .container4 {
-    max-width: 100%;
-    margin: auto;
-    padding-left: 2%;
-    padding-right: 2%;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  /*？？？*/
-  .top-wrapper p {
-    opacity: 0.7;
-  }
-  
-  /*ボタンの文字色*/
-  .btn {
-    padding: 8px 30px;
-    color: white;
-    display: inline-block;
-    opacity: 0.8;
-    border-radius: 6px;
-    text-align: center;
-  }
-  
-  /*カテゴリとかのやつが下に下がる*/
-  .fa {
-    margin-right: 5px;
-  }
-  
-  /*上の黒のやつ*/
-  header {
-    height: 65px;
-    width: 100%;
-    background-color: rgba(34, 49, 52, 0.9);
-    position :fixed;
-    top: 0;
-    z-index: 10;
-  }
-  
-  /*バチャ鳥のロゴ*/
-  .logo {
-    width: 124px;
-    margin-top: 5px;
-  }
-  
-  
-  .header-left {
-    float: left;
-  }
-  
-  /*カテゴリとかのやつマイナス増やしたら消える*/
-  .header-right {
-    float: right;
-    margin-right: -5px;
-  }
-  
-  /*上タブの白の位置*/
-  .header-right a {
-    line-height: 65px;
-    padding: 0 25px;
-    color: white;
-    display: block;
-    float: left;
-    transition: all 0.5s;
-  }
-  
-  /*上タブの色*/
-  .header-right a:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-  }
-  
-  
-  .heading h2 {
-    font-weight: normal;
-  }
-  
-  
-  .heading h3 {
-    font-weight: normal;
-  }
-  
-  
-  /*ボタンとか左いくし下あく*/
-  .message-wrapper {
-    border-bottom: 2px solid #eee;
-    padding-bottom: 4px;
-    text-align: center;
-  }
-  
-  /*ボタンのでかさとか色*/
-  .message {
-    padding: 30px 120px;
-    background-color: #d89430;
-    cursor: pointer;
-    box-shadow: 0 7px #976823;
-  }
-  
-  /*ボタンの動き*/
-  .message:active {
-    position: relative;
-    top: 7px;
-    box-shadow: none;
-  }
-  
-  /*下のvittriの画像のでかさ*/
-  footer img {
-    width: 100px;
-  }
-  
-  /*コピーライトのデザイン*/
-  footer p {
-    color:  #b3aeb5;
-    font-size: 25px;
-  }
-  
-  /*下のロゴの薄い線*/
-  footer {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-  }
-  
-  /*広告の位置移動*/
-  .carousel {
-    width: 100%;
-    margin: 70px auto;
-  }
-  
-  
-  /*???*/
-  ul {
-    list-style: none;
-    margin: 30;
-    padding: 0;
-    height: 100%;
-    display: flex;
-    transition: transform .3s;
-  }
-  
-  
-  /*中の画像変えれる*/
-  li {
-    height: 100%;
-    min-width: 100%;
-  }
-  
-  /*画像のでかさ変えれる*/
-  li img {
-    width: 100%;
-    height: 450px;
-    object-fit: cover;
-  }
-  
-  /*広告の次押すやつ*/
-  #prev,
-  #next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    border: none;
-    background: rgba(0, 0, 0, .8);
-    color: #fff;
-    font-size: 24px;
-    padding: 0 8px 4px;
-    cursor: pointer;
-  }
-  
-  #prev:hover,
-  #next:hover {
-    opacity: .8;
-  }
-  
-  #prev {
-    left: 0;
-  }
-  
-  #next {
-    right: 0;
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
-  /*ボタンと黒ちょぼの位置*/
-  nav {
-    margin-top: 0px;
-    text-align: center;
-  }
-  
-  /*ボタン下にいく*/
-  nav button + button {
-    margin-left: 10px;
-  }
-  
-  /*ボタンいろいろ*/
-  nav button {
-    border: none;
-    width: 16px;
-    height: 16px;
-    background: #ddd;
-    border-radius: 50%;
-    cursor: pointer;
-  }
-  
-  /*下の画像の丸の色*/
-  nav .current {
-    background: #999;
-  }
-  
-  /*キャッチコピー
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN";
+}
+
+a {
+  text-decoration: none;
+}
+
+/*上の調整*/
+.container1 {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 2%;
+  padding-right: 2%;
+  overflow: hidden;
+  position: relative;
+}
+
+/*広告と黒ちょぼの距離*/
+.container2 {
+  max-width: 80%;
+  height: 480px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+/*ボタンとロゴの距離*/
+.container3 {
+  max-width: 100%;
+  height: 120px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+/*下の調整*/
+.container4 {
+  max-width: 100%;
+  margin: auto;
+  padding-left: 2%;
+  padding-right: 2%;
+  overflow: hidden;
+  position: relative;
+}
+
+/*？？？*/
+.top-wrapper p {
+  opacity: 0.7;
+}
+
+/*ボタンの文字色*/
+.btn {
+  padding: 8px 30px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 6px;
+  text-align: center;
+}
+
+/*カテゴリとかのやつが下に下がる*/
+.fa {
+  margin-right: 5px;
+}
+
+/*上の黒のやつ*/
+header {
+  height: 65px;
+  width: 100%;
+  background-color: #ff9e3d;
+  position: fixed;
+  display: flex;
+  top: 0;
+  z-index: 10;
+}
+
+.header-left {
+  float: left;
+  height: 100%;
+  position: relative;
+}
+
+/*バチャ鳥のロゴ*/
+.logo {
+  width: 124px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*カテゴリとかのやつマイナス増やしたら消える*/
+.header-right {
+  float: right;
+  margin-right: -5px;
+}
+
+/*上タブの白の位置*/
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+/*上タブの色*/
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+.heading h2 {
+  font-weight: normal;
+}
+
+
+.heading h3 {
+  font-weight: normal;
+}
+
+
+/*ボタンとか左いくし下あく*/
+.message-wrapper {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 4px;
+  text-align: center;
+}
+
+/*ボタンのでかさとか色*/
+.message {
+  padding: 30px 120px;
+  background-color: #d89430;
+  cursor: pointer;
+  box-shadow: 0 7px #976823;
+}
+
+/*ボタンの動き*/
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+/*下のvittriの画像のでかさ*/
+footer img {
+  width: 100px;
+}
+
+/*コピーライトのデザイン*/
+footer p {
+  color: #b3aeb5;
+  font-size: 12px;
+}
+
+/*コピーライトのデザイン
+footer p {
+  color: #b3aeb5;
+  font-size: 25px;
+}
+
+/*下のロゴの薄い線*/
+footer {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+/*広告の位置移動*/
+.carousel {
+  width: 100%;
+  margin: 70px auto;
+}
+
+
+/*???*/
+ul {
+  list-style: none;
+  margin: 30;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  transition: transform .3s;
+}
+
+
+/*中の画像変えれる*/
+li {
+  height: 100%;
+  min-width: 100%;
+}
+
+/*画像のでかさ変えれる*/
+li img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+/*広告の次押すやつ*/
+#prev,
+#next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: rgba(0, 0, 0, .8);
+  color: #fff;
+  font-size: 24px;
+  padding: 0 8px 4px;
+  cursor: pointer;
+}
+
+#prev:hover,
+#next:hover {
+  opacity: .8;
+}
+
+#prev {
+  left: 0;
+}
+
+#next {
+  right: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+/*ボタンと黒ちょぼの位置*/
+nav {
+  margin-top: 0px;
+  text-align: center;
+}
+
+/*ボタン下にいく*/
+nav button+button {
+  margin-left: 10px;
+}
+
+/*ボタンいろいろ*/
+nav button {
+  border: none;
+  width: 16px;
+  height: 16px;
+  background: #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/*下の画像の丸の色*/
+nav .current {
+  background: #999;
+}
+
+/*キャッチコピー
   -------------------------------------*/
-  .catch {
-    text-align: center;
-  }
-  .catch h2 {
-    padding-top: 4rem;
-  }
-  .catch h2 {
-    zoom: 1.4; 
-  }
-  .catch h2 {
-    padding-bottom: 2rem;
-  }
-  .under {
-    border-bottom: 0.4rem solid #000;
-    padding:0 1rem 1rem 1rem;
-  }
-  .center {
+.catch {
+  text-align: center;
+}
+
+.catch h2 {
+  padding-top: 4rem;
+}
+
+.catch h2 {
+  zoom: 1.4;
+}
+
+.catch h2 {
+  padding-bottom: 2rem;
+}
+
+.under {
+  border-bottom: 0.4rem solid #000;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.center {
   text-align: center;
   margin-bottom: 4rem;
-  }
-  
-  /*申し込みの流れ
+}
+
+/*申し込みの流れ
   -------------------------------------*/
-  .flow.row {
-      margin-bottom: 3rem;
-  }
-  
-  .size_test{
-    font-size:  20px;
-  }
-  
+.flow.row {
+  margin-bottom: 3rem;
+}
+
+.size_test {
+  font-size: 20px;
+}
+
 
 /* body {
     margin: 0;
@@ -342,19 +357,6 @@ a {
   
 .btn-wrapper p {
     margin: 10px 0;
-}
-  
-.signup {
-    background-color: #239b76;
-}
-  
-.facebook {
-    background-color: #3b5998;
-    margin-right: 10px;
-}
-  
-.twitter {
-    background-color: #55acee;
 }
   
 .btn {
