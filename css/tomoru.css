@@ -7,7 +7,7 @@ a {
   text-decoration: none;
 }
 
-.person>div {
+.person > div {
   background-color: #fff59d;
   background-repeat: repeat-x;
   background-position: center bottom;
@@ -15,7 +15,7 @@ a {
   border-radius: 16px;
 }
 
-.person>h1 {
+.person > h1 {
   text-align: center;
   font-size: 40px;
   margin: 0;
@@ -34,6 +34,66 @@ footer img {
 footer p {
   color: #b3aeb5;
   font-size: 12px;
+}
+
+.container {
+  width: calc(100% - 32px);
+  margin: 0 auto;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+.voices {
+  background-color: #fff59d;
+  padding: 64px 0;
+}
+
+.voices > h1 {
+  text-align: center;
+  /* padding-bottom: 64px; */
+  padding-bottom: 0;
+  font-size: 40px;
+}
+
+.voices section {
+  background: #fff;
+  padding: 16px;
+  border-radius: 16px;
+}
+
+.voices footer {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.voices section + section {
+  margin-top: 16px;
+}
+
+.voices .container {
+  display: flex;
+  gap: 16px;
+}
+
+.voices section + section {
+  margin-top: 0;
+}
+
+.voices section {
+  width: calc((100% - 32px) / 3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.comment {
+  margin: 0;
+}
+
+section > li {
+  font-weight: bold;
 }
 
 #open,
@@ -81,6 +141,7 @@ li {
 }
 
 h1 {
+  padding-bottom: 0;
   text-align: center;
 }
 
