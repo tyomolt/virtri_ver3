@@ -132,9 +132,9 @@ header {
 /*ボタンのでかさとか色*/
 .message {
   padding: 30px 120px;
-  background-color: #d89430;
+  background-color: #ff9e3d;
   cursor: pointer;
-  box-shadow: 0 7px #976823;
+  box-shadow: 0 7px #d89430;
 }
 
 /*ボタンの動き*/
