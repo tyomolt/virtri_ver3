@@ -1,125 +1,151 @@
-.person > div {
-    background-color: #fff59d;
-    background-repeat: repeat-x;
-    background-position: center bottom;
-    text-align: center;
-    border-radius: 16px;
+.person>div {
+  background-color: #fff59d;
+  background-repeat: repeat-x;
+  background-position: center bottom;
+  text-align: center;
+  border-radius: 16px;
 }
 
-.person > h1 {
-    text-align: center;
-    font-size: 40px;
-    margin: 0;
+.person>h1 {
+  text-align: center;
+  font-size: 40px;
+  margin: 0;
 }
 
 footer {
-    text-align: center;
-    font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-align: center;
 }
 
-#open, #close, .btn {
-    padding: 8px 30px;
-    color: white;
-    display: inline-block;
-    opacity: 0.8;
-    border-radius: 6px;
-    text-align: center;
+footer img {
+  width: 100px;
+}
+
+footer p {
+  color: #b3aeb5;
+  font-size: 12px;
+}
+
+#open,
+#close,
+.btn {
+  padding: 8px 30px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 6px;
+  text-align: center;
 }
 
 #mask {
-    background: rgba(0, 0, 0, 0.4);
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-  }
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
 
 #modal {
-    background: #fff;
-    width: 300px;
-    padding: 20px;
-    border-radius: 4px;
-    position: absolute;
-    top: 40px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
+  background: #fff;
+  width: 300px;
+  padding: 20px;
+  border-radius: 4px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 
 #mask.hidden {
-    display: none;
+  display: none;
 }
 
 #modal.hidden {
-    transform: translate(0, -500px);
+  transform: translate(0, -500px);
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
 /*ボタンのでかさとか色*/
 .message {
-padding: 8px 30px;
-background-color: #d89430;
-cursor: pointer;
-box-shadow: 0 7px #976823;
+  padding: 8px 30px;
+  background-color: #d89430;
+  cursor: pointer;
+  box-shadow: 0 7px #976823;
 }
 
 /*ボタンの動き*/
 .message:active {
-position: relative;
-top: 7px;
-box-shadow: none;
+  position: relative;
+  top: 7px;
+  box-shadow: none;
 }
 
 .atg {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-  /*上の黒のやつ*/
-  header {
-    height: 65px;
-    width: 100%;
-    background-color: rgba(34, 49, 52, 0.9);
-    position :fixed;
-    top: 0;
-    z-index: 10;
-  }
-  
-  /*バチャ鳥のロゴ*/
-  .logo {
-    width: 124px;
-    margin-top: 5px;
-  }
-  
-  
-  .header-left {
-    float: left;
-  }
-  
-  /*カテゴリとかのやつマイナス増やしたら消える*/
-  .header-right {
-    float: right;
-    margin-right: -5px;
-  }
-  
-  /*上タブの白の位置*/
-  .header-right a {
-    line-height: 65px;
-    padding: 0 25px;
-    color: white;
-    display: block;
-    float: left;
-    transition: all 0.5s;
-  }
-  
-  /*上タブの色*/
-  .header-right a:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-  }
+/*上の黒のやつ*/
+header {
+  height: 65px;
+  width: 100%;
+  background-color: #ff9e3d;
+  position: fixed;
+  display: flex;
+  top: 0;
+  z-index: 10;
+}
+
+.header-left {
+  float: left;
+  height: 100%;
+  position: relative;
+}
+
+/*バチャ鳥のロゴ*/
+.logo {
+  width: 124px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*カテゴリとかのやつマイナス増やしたら消える*/
+.header-right {
+  float: right;
+  margin-right: -5px;
+}
+
+/*上タブの白の位置*/
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+/*上タブの色*/
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/*上の調整*/
+.container1 {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 2%;
+  padding-right: 2%;
+  overflow: hidden;
+  position: relative;
+}
