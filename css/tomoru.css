@@ -3,6 +3,10 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .person>div {
   background-color: #fff59d;
   background-repeat: repeat-x;
