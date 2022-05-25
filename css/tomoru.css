@@ -1,3 +1,8 @@
+body {
+  display: block;
+  margin: 0;
+}
+
 .person>div {
   background-color: #fff59d;
   background-repeat: repeat-x;
